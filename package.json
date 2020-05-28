@@ -1,7 +1,7 @@
 {
   "name": "@aurghyadip/covid19cli",
   "description": "Get information about Covid-19 without leaving your terminal.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Aurghyadip Kundu",
   "bin": {
     "ncov19": "./bin/run"

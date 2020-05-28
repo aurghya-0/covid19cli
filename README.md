@@ -8,35 +8,32 @@ Get information about Covid-19 without leaving your terminal.
 [![License](https://img.shields.io/npm/l/@aurghyadip/covid19cli.svg)](https://github.com/aurghya-0/covid19cli/blob/master/package.json)
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Commands](#commands)
+* [covid19cli](#covid19cli)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g @aurghyadip/covid19cli
 $ ncov19 COMMAND
 running command...
 $ ncov19 (-v|--version|version)
-@aurghyadip/covid19cli/0.1.0 darwin-x64 node-v12.16.3
+@aurghyadip/covid19cli/0.1.1 darwin-x64 node-v12.16.3
 $ ncov19 --help [COMMAND]
 USAGE
   $ ncov19 COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-
-- [`ncov19 help [COMMAND]`](#ncov19-help-command)
-- [`ncov19 summary`](#ncov19-summary)
+* [`ncov19 help [COMMAND]`](#ncov19-help-command)
+* [`ncov19 summary`](#ncov19-summary)
 
 ## `ncov19 help [COMMAND]`
 
@@ -67,6 +64,5 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/summary.ts](https://github.com/aurghya-0/covid19cli/blob/v0.1.0/src/commands/summary.ts)_
-
+_See code: [src/commands/summary.ts](https://github.com/aurghya-0/covid19cli/blob/v0.1.1/src/commands/summary.ts)_
 <!-- commandsstop -->
