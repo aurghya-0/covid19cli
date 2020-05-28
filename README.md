@@ -61,7 +61,8 @@ USAGE
   $ ncov19 summary
 
 OPTIONS
-  -h, --help  show CLI help
+  -c, --country=country  Name of the country
+  -h, --help             show CLI help
 ```
 
 _See code: [src/commands/summary.ts](https://github.com/aurghya-0/covid19cli/blob/v0.1.1/src/commands/summary.ts)_
