@@ -1,5 +1,5 @@
 {
-  "name": "covid19cli",
+  "name": "@aurghyadip/covid19cli",
   "description": "Get information about Covid-19 without leaving your terminal.",
   "version": "0.1.0",
   "author": "Aurghyadip Kundu",

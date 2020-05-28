@@ -15,11 +15,11 @@ Get information about Covid-19 without leaving your terminal.
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g covid19cli
+$ npm install -g @aurghyadip/covid19cli
 $ ncov19 COMMAND
 running command...
 $ ncov19 (-v|--version|version)
-covid19cli/0.1.0 darwin-x64 node-v12.16.3
+@aurghyadip/covid19cli/0.1.0 darwin-x64 node-v12.16.3
 $ ncov19 --help [COMMAND]
 USAGE
   $ ncov19 COMMAND
