@@ -28,29 +28,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`ncov19 hello [FILE]`](#ncov19-hello-file)
 * [`ncov19 help [COMMAND]`](#ncov19-help-command)
-* [`ncov19 summery [FILE]`](#ncov19-summery-file)
-
-## `ncov19 hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ ncov19 hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ ncov19 hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/aurghya-0/covid19cli/blob/v0.1.0/src/commands/hello.ts)_
+* [`ncov19 summary`](#ncov19-summary)
 
 ## `ncov19 help [COMMAND]`
 
@@ -69,19 +48,17 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.0.1/src/commands/help.ts)_
 
-## `ncov19 summery [FILE]`
+## `ncov19 summary`
 
-describe the command here
+Get the global summery of COVID-19
 
 ```
 USAGE
-  $ ncov19 summery [FILE]
+  $ ncov19 summary
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
 ```
 
-_See code: [src/commands/summery.ts](https://github.com/aurghya-0/covid19cli/blob/v0.1.0/src/commands/summery.ts)_
+_See code: [src/commands/summary.ts](https://github.com/aurghya-0/covid19cli/blob/v0.1.0/src/commands/summary.ts)_
 <!-- commandsstop -->
