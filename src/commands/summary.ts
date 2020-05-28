@@ -1,6 +1,7 @@
 import { URL } from "../server-config";
 import { Command, flags } from "@oclif/command";
 import axios from "axios";
+import Table = require("cli-table3");
 
 export type CovidData = {
   NewConfirmed: number;
@@ -16,28 +17,52 @@ export default class Summary extends Command {
 
   static flags = {
     help: flags.help({ char: "h" }),
-    // flag with a value (-n, --name=VALUE)
-    name: flags.string({ char: "n", description: "name to print" }),
-    // flag with no value (-f, --force)
-    force: flags.boolean({ char: "f" }),
   };
 
-  static args = [{ name: "file" }];
-
   async run() {
-    const { args, flags } = this.parse(Summary);
-    const summary = await axios({
+    const table = new Table();
+    const summary: any = await axios({
       method: "GET",
       url: `${URL}/summary`,
     });
-    const global: CovidData = summary.data["Global"];
 
-    const name = flags.name ?? "world";
-    this.log(
-      `Affected : ${global.TotalConfirmed.toLocaleString()} \nRecovered : ${global.TotalRecovered.toLocaleString()} \nDead : ${global.TotalDeaths.toLocaleString()}`
+    const date: string = new Date(summary.data["Date"]).toDateString();
+    const global: CovidData = summary.data["Global"];
+    table.push(
+      [{ content: "Global Summary", colSpan: 3, hAlign: "center" }],
+      ["Total Affected", "Total Recovered", "Total Dead"],
+      [
+        global.TotalConfirmed.toLocaleString(),
+        global.TotalRecovered.toLocaleString(),
+        global.TotalDeaths.toLocaleString(),
+      ],
+      [
+        { content: "New Confirmed", colSpan: 1 },
+        {
+          content: global.NewConfirmed.toLocaleString(),
+          colSpan: 2,
+          hAlign: "center",
+        },
+      ],
+      [
+        { content: "New Recovered", colSpan: 1 },
+        {
+          content: global.NewRecovered.toLocaleString(),
+          colSpan: 2,
+          hAlign: "center",
+        },
+      ],
+      [
+        { content: "New Deaths", colSpan: 1 },
+        {
+          content: global.NewDeaths.toLocaleString(),
+          colSpan: 2,
+          hAlign: "center",
+        },
+      ],
+      [{ content: `Last Updated ${date}`, colSpan: 3, hAlign: "center" }]
     );
-    if (args.file && flags.force) {
-      this.log(`you input --force and --file: ${args.file}`);
-    }
+
+    this.log(`${table.toString()}`);
   }
 }

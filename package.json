@@ -12,6 +12,7 @@
     "@oclif/config": "^1.15.1",
     "@oclif/plugin-help": "^3.0.1",
     "axios": "^0.19.2",
+    "cli-table3": "^0.6.0",
     "tslib": "^1.13.0"
   },
   "devDependencies": {
