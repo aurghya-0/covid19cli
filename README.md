@@ -21,7 +21,7 @@ $ npm install -g @aurghyadip/covid19cli
 $ ncov19 COMMAND
 running command...
 $ ncov19 (-v|--version|version)
-@aurghyadip/covid19cli/0.2.0 darwin-x64 node-v12.16.3
+@aurghyadip/covid19cli/0.2.1 darwin-x64 node-v12.16.3
 $ ncov19 --help [COMMAND]
 USAGE
   $ ncov19 COMMAND
@@ -32,24 +32,8 @@ USAGE
 # Commands
 
 <!-- commands -->
-* [`ncov19 chart`](#ncov19-chart)
 * [`ncov19 help [COMMAND]`](#ncov19-help-command)
 * [`ncov19 summary`](#ncov19-summary)
-
-## `ncov19 chart`
-
-Plot a graph based on the data
-
-```
-USAGE
-  $ ncov19 chart
-
-OPTIONS
-  -c, --country=country  Name of the country
-  -h, --help             show CLI help
-```
-
-_See code: [src/commands/chart.ts](https://github.com/aurghya-0/covid19cli/blob/v0.2.0/src/commands/chart.ts)_
 
 ## `ncov19 help [COMMAND]`
 
@@ -81,5 +65,5 @@ OPTIONS
   -h, --help             show CLI help
 ```
 
-_See code: [src/commands/summary.ts](https://github.com/aurghya-0/covid19cli/blob/v0.2.0/src/commands/summary.ts)_
+_See code: [src/commands/summary.ts](https://github.com/aurghya-0/covid19cli/blob/v0.2.1/src/commands/summary.ts)_
 <!-- commandsstop -->

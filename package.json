@@ -1,7 +1,7 @@
 {
   "name": "@aurghyadip/covid19cli",
   "description": "Get information about Covid-19 without leaving your terminal.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Aurghyadip Kundu",
   "bin": {
     "ncov19": "./bin/run"
@@ -12,8 +12,6 @@
     "@oclif/config": "^1.15.1",
     "@oclif/plugin-help": "^3.0.1",
     "axios": "^0.19.2",
-    "blessed": "^0.1.81",
-    "blessed-contrib": "^4.8.20",
     "cli-table3": "^0.6.0",
     "tslib": "^1.13.0"
   },
